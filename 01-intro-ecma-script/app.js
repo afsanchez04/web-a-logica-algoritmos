@@ -1,4 +1,4 @@
-import { saludar, ladrar } from "./funciones"
+import { saludar, ladrar } from "./funciones.js"
 
 //console.log("Intro a ECMAScript")
 
@@ -24,3 +24,27 @@ const usuario = {
 //Desestructurar
 /* const { nombre, edad } = usuario
 console.log(nombre) */
+
+/* console.log( saludar("Robert") ) */
+
+//Ejemplo de una promise
+function cargarDatos() {
+
+  return new Promise( (resolve, reject) => {
+    setTimeout( () => {
+      const exito = true
+
+      if(exito){
+        resolve("Datos fueron cargados correctamente")
+      }else{
+        reject("Error al cargar los datos")
+      }
+
+    }, 4000 )
+  } )
+
+}
+
+cargarDatos()
+.then( (mensaje) => console.log(mensaje) )
+.catch( (error) => console.log(error) )
