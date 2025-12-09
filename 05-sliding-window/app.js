@@ -34,7 +34,6 @@ const array = [2, 3, 1, 2, 4, 3]
 const k = 7
 
 function ventanaVariable(arr, target) {
-  debugger
   let sumaActual = 0
   let inicio = 0
   let longitudMinima = Infinity;
