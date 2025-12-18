@@ -1,0 +1,18 @@
+{
+  "name": "node_project",
+  "version": "1.0.0",
+  "description": "Proyecto inicial de node js",
+  "main": "gestorNotas.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/gestorNotas.js",
+    "dev": "nodemon src/gestorNotas.js",
+    "build": "node src/gestorNotas.js"
+  },
+  "author": "andres",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

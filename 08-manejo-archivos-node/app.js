@@ -115,5 +115,14 @@ console.log("Después añadir información al archivo") */
 
 
 
-//
+//Ejercicio con archivo de texto 
 
+//Leer el archivo 
+/* const panagrama = fs.readFileSync("panagramas.txt", "utf-8")
+console.log(panagrama)
+
+fs.writeFileSync("panagramas-copia.txt", panagrama)
+
+const nuevoPanagrama = panagrama.replace(/feliz/ig, "triste")
+
+fs.writeFileSync("panagramas-copia.txt", nuevoPanagrama) */
